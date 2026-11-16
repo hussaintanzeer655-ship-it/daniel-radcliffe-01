@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel Radcliffe Studio - 01</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">DR Studio</div>
+    <nav aria-label="Main" class="nav">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn" class="btn ghost">Theme</button>
+    </nav>
+  </header>
+  <section class="hero" id="home">
+    <h1>Daniel Radcliffe Studio</h1>
+    <p>Crafting versatile, cinematic digital experiences.</p>
+    <button data-action="openModal" class="btn">View Intro</button>
+  </section>
+  <section id="about" class="content">
+    <h2>About</h2>
+    <p>Concise, focused projects with a storytelling edge. Clean UI, fast interactions, no dependencies.</p>
+  </section>
+  <section id="work" class="content">
+    <h2>Selected Work</h2>
+    <div class="grid">
+      <div class="card" data-tag="ui">UI Concepts</div>
+      <div class="card" data-tag="dev">Frontend Demos</div>
+      <div class="card" data-tag="responsive">Responsive Mockups</div>
+    </div>
+    <div class="filters" aria-label="Filter projects">
+      <button class="tag" data-filter="all">All</button>
+      <button class="tag" data-filter="ui">UI</button>
+      <button class="tag" data-filter="dev">Dev</button>
+      <button class="tag" data-filter="responsive">Responsive</button>
+    </div>
+  </section>
+  <section id="contact" class="content">
+    <h2>Contact</h2>
+    <form onsubmit="return false">
+      <input placeholder="Your name" required />
+      <input placeholder="Email" type="email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <h3>Intro</h3>
+      <p>This is a compact, self-contained single-page site example for GitHub Pages.</p>
+      <button class="btn" id="closeModal">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
